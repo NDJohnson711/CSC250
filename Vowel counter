@@ -1,0 +1,23 @@
+
+package javaapplication11;
+import java.util.Scanner;
+
+public class JavaApplication11 {
+
+    
+    public static void main(String[] args) {
+        int count = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Welcome! First enter the bible verse you'd like!");
+        String sent =  scan.nextLine();
+        for(int i=0;i < sent.length(); i++)
+        {
+            char ch = sent.charAt(i);
+            if(ch == 'a' ||ch == 'e' ||ch == 'i' ||ch == 'o' ||ch == 'u'||ch == 'A' ||ch == 'E' ||ch == 'I' ||ch == 'O' ||ch == 'U')
+            {
+                count++;
+            }
+        }
+        System.out.println("Number of vowels in your bible verse is: " + count);
+    }
+}
