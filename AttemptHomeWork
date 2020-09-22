@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblebook;
+
+/**
+ *
+ * @author legon
+ */
+public class BibleBook 
+{
+    public static String Book;
+    String [] book = {"Matthew", "Mark", "Luke"};
+    public static int chapter;
+    int [] Chap = {1, 2, 3};
+    public static String Name;
+    String [] name = {"Def Chap", "Def Chap2", "Def Chap3"};
+    
+    public static void main (String[] args)
+    {
+        BibleBook book1 = new BibleBook();
+        book1.display(Book(book[0]), chapter(Chap[0]), Name(name[0]));
+        
+        BibleBook book2 = new BibleBook();
+        book2.display(Book(book[1]), chapter(Chap[1]), Name(name[1]));
+        
+        BibleBook book3 = new BibleBook();
+        book3.display(Book(book[2]), chapter(Chap[2]), Name(name[2]));
+    }
+}
