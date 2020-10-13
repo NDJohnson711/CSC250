@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package biblebook2;
+import java.util.Scanner;
+import java.io.File;
+import java.io.*;
+/**
+ *
+ * @author legon
+ */
+public class BibleBook2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws Exception
+    { 
+      //  File file = new File(System.getProperty("user.dir") + "/src/input.dat");
+        int numLines = 0;
+        String[] dang = new String[0];
+        int[] darn = new int[0];
+        //Books book = new Books();
+        //System.out.println(file);
+        Scanner input = new Scanner(new File(System.getProperty("user.dir") + "/src/input.dat"));
+        
+        while(input.hasNext())
+        {
+            numLines++;
+            input.nextLine();
+        }
+        BibleBook2[] books = new BibleBook2[numLines];
+        Scanner scan = new Scanner(System.in);
+        String word = scan.nextLine();
+        word.Books();
+        if (word != word.Books())
+        {
+            System.out.println("No words that match this word");
+        }
+        else 
+        {
+           System.out.println(word + BibleBook2.Books());
+        }
+        
+        
+            
+        
+        
+    }
+    
+}
