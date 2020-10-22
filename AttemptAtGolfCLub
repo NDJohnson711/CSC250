@@ -1,0 +1,117 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package golfclub;
+import java.util.Scanner;
+/**
+ *
+ * @author legon
+ */
+public class GolfClub {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        
+        GolfBag bag1 = new GolfBag("Putter", 20);
+        GolfBag bag2 = new GolfBag("SW", 70);
+        GolfBag bag3 = new GolfBag("Gw", 90);
+        GolfBag bag4 = new GolfBag("Pw", 100);
+        GolfBag bag5 = new GolfBag("Nine Iron", 115);
+        GolfBag bag6 = new GolfBag("Eight Iron", 130);
+        GolfBag bag7 = new GolfBag("Seven Iron", 140);
+        GolfBag bag8 = new GolfBag("Six Iron", 150);
+        GolfBag bag9 = new GolfBag("Five Iron", 160);
+        GolfBag bag10 = new GolfBag("Four Iron", 170);
+        GolfBag bag11 = new GolfBag("Three Iron", 180);
+        GolfBag bag12 = new GolfBag("Three Wood", 200);
+        GolfBag bag13 = new GolfBag("Driver", 230);
+        System.out.println("What Distance Do you need to go?(In Yards)");
+        int dis = scan.nextInt();
+        
+        if(dis < 230 && dis > 200)
+        {
+            System.out.println("Driver");
+            
+        }
+        else{
+            if(dis < 200 && dis > 180)
+            {
+                System.out.println("Three Wood");
+            }
+            else{
+                if(dis <180 && dis > 170)
+                {
+                    System.out.println("Three Iron");
+                }
+                else{
+                    if(dis < 170 && dis > 160)
+                    {
+                        System.out.println("Four Iron");
+                    }
+                    else{
+                        if(dis < 160 && dis > 150)
+                        {
+                            System.out.println("Five Iron");
+                        }
+                        else{
+                            if(dis <150 && dis > 140){
+                                System.out.println("Six Iron");
+                            }
+                            else{
+                                if(dis < 140 && dis > 130){
+                                    System.out.println("Seven Iron");
+                                }
+                                else{
+                                    if(dis < 130 && dis > 115)
+                                    {
+                                        System.out.println("Eight Iron");
+                                    }
+                                    else{
+                                        if(dis < 115 && dis > 100)
+                                        {
+                                            System.out.println("Nine Iron");
+                                        }
+                                        else{
+                                            if(dis < 100 && dis > 90)
+                                            {
+                                                System.out.println("PW");
+                                            }
+                                            else
+                                            {
+                                                if(dis < 90 && dis > 70)
+                                                {
+                                                    System.out.println("GW");
+                                                }
+                                                else
+                                                {
+                                                    if(dis < 70 && dis > 20)
+                                                    {
+                                                        System.out.println("SW");
+                                                    }
+                                                    else
+                                                    {
+                                                        if(dis < 20)
+                                                        {
+                                                            System.out.println("Putter");
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+    
+    }
+}
