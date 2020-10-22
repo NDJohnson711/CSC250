@@ -1,0 +1,117 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package golfclub;
+import java.util.Scanner;
+/**
+ *
+ * @author legon
+ */
+public class GolfClub {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {
+        Scanner scan = new Scanner(System.in);
+        
+        GolfBag bag1 = new GolfBag("Putter", 20);
+        GolfBag bag2 = new GolfBag("SW", 70);
+        GolfBag bag3 = new GolfBag("Gw", 90);
+        GolfBag bag4 = new GolfBag("Pw", 100);
+        GolfBag bag5 = new GolfBag("Nine Iron", 115);
+        GolfBag bag6 = new GolfBag("Eight Iron", 130);
+        GolfBag bag7 = new GolfBag("Seven Iron", 140);
+        GolfBag bag8 = new GolfBag("Six Iron", 150);
+        GolfBag bag9 = new GolfBag("Five Iron", 160);
+        GolfBag bag10 = new GolfBag("Four Iron", 170);
+        GolfBag bag11 = new GolfBag("Three Iron", 180);
+        GolfBag bag12 = new GolfBag("Three Wood", 200);
+        GolfBag bag13 = new GolfBag("Driver", 230);
+        System.out.println("What Distance Do you need to go?(In Yards)");
+        int dis = scan.nextInt();
+        
+        if(dis < 230 && dis > 200)
+        {
+            bag13.display();
+            
+        }
+        else{
+            if(dis < 200 && dis > 180)
+            {
+                bag12.display();
+            }
+            else{
+                if(dis <180 && dis > 170)
+                {
+                    bag11.display();
+                }
+                else{
+                    if(dis < 170 && dis > 160)
+                    {
+                        bag10.display();
+                    }
+                    else{
+                        if(dis < 160 && dis > 150)
+                        {
+                            bag9.display();
+                        }
+                        else{
+                            if(dis <150 && dis > 140){
+                                bag8.display();
+                            }
+                            else{
+                                if(dis < 140 && dis > 130){
+                                    bag7.display();
+                                }
+                                else{
+                                    if(dis < 130 && dis > 115)
+                                    {
+                                        bag6.display();
+                                    }
+                                    else{
+                                        if(dis < 115 && dis > 100)
+                                        {
+                                            bag5.display();
+                                        }
+                                        else{
+                                            if(dis < 100 && dis > 90)
+                                            {
+                                                bag4.display();
+                                            }
+                                            else
+                                            {
+                                                if(dis < 90 && dis > 70)
+                                                {
+                                                    bag3.display();
+                                                }
+                                                else
+                                                {
+                                                    if(dis < 70 && dis > 20)
+                                                    {
+                                                        bag2.display();
+                                                    }
+                                                    else
+                                                    {
+                                                        if(dis < 20)
+                                                        {
+                                                            bag1.display();
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+    
+    }
+}
